@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-candy-50: #fdf2f8;
+  --color-candy-100: #fce7f3;
+  --color-candy-200: #fbcfe8;
+  --color-candy-300: #f9a8d4;
+  --color-candy-400: #f472b6;
+  --color-candy-500: #ec4899;
+  --color-candy-600: #db2777;
+  --color-candy-700: #be185d;
+  --color-candy-800: #9d174d;
+  --color-candy-900: #831843;
+  --color-neon-blue: #3b82f6;
+  --color-neon-purple: #8b5cf6;
+  --color-neon-pink: #ec4899;
+  --color-neon-cyan: #06b6d4;
+  --color-dark-900: #0a0a0f;
+  --color-dark-800: #12121a;
+  --color-dark-700: #1a1a25;
+  --color-dark-600: #222230;
+  --color-dark-500: #2a2a3a;
+  --color-dark-400: #3a3a4f;
+  --color-dark-300: #5a5a7a;
+  --color-dark-200: #8a8ab0;
+  --color-dark-100: #b0b0d0;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(236, 72, 153, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(236, 72, 153, 0.6); }
+}
+
+@keyframes wave {
+  0% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
+  100% { transform: scaleY(1); }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a4f #12121a;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #e0e0f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
